@@ -1,0 +1,9 @@
+- name: Resources
+  path: resources.html
+  section_id: resources
+- name: Giving
+  path: giving.html
+  section_id: giving
+- name: Calendar
+  path: calendar.html
+  section_id: calendar
