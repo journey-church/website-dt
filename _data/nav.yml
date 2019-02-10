@@ -9,12 +9,12 @@
   section_id: portfolio
   children:
     - name: Our Story
-      path: portfolio.html
+      path: about.html#story
     - name: What We Believe
-      path: portfolio-item.html
+      path: about.html#belief
     - name: Cultural Distinctives
-      path: portfolio-item.html
+      path: about.html#culture
     - name: Covenant Membership
-      path: portfolio-item.html
+      path: about.html#membership
     - name: Meet Our Staff
       path: about.html#staff

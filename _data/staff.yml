@@ -1,0 +1,39 @@
+- name: Corey Wolloff
+  position: Parish Pastor
+  desc:
+    “Our family loves this city. Its’ culture, its’ core, its’ future but most importantly its’ people. It is an honor for me to lead a community of people who know that the best is yet to come for Tampa. In Tampa as it is in Heaven.”
+  avatar: images/staff/corey-wolloff.png
+- name: Sarah Nichols
+  position: Kids Church Director
+  desc:
+    consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit.
+  avatar: images/staff/sarah-nichols.png
+  socials:
+    - icon_class: fa fa-twitter
+      url: http://twitter.com
+    - icon_class: fa fa-facebook
+      url: http://facebook.com
+    - icon_class: fa fa-dribbble
+      url: http://dribbble.com
+- name: Shaun Metzger
+  position: Worship Team Lead
+  desc:
+    consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit.
+  avatar: images/staff/shaun-metzger.png
+  socials:
+    - icon_class: fa fa-twitter
+      url: http://twitter.com
+    - icon_class: fa fa-facebook
+      url: http://facebook.com
+    - icon_class: fa fa-tumblr
+      url: http://tumblr.com
+- name: John Nichols
+  position: Associate Worship Leader
+  desc:
+    consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit.
+  avatar: images/staff/john-nichols.png
+  socials:
+    - icon_class: fa fa-twitter
+      url: http://twitter.com
+    - icon_class: fa fa-facebook
+      url: http://facebook.com

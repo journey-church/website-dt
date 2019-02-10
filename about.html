@@ -1,170 +1,260 @@
 ---
 layout: default
 section_id: about
-skills:
-  - title: Web Design
-    percent: 84
-  - title: Web Development
-    percent: 95
-  - title: Site Management
-    percent: 70
-  - title: Branding
-    percent: 61
-
-testimonials:
-  - text: "Reprehenderit eos et non et ut eum reprehenderit quis sequi quia vel repellendus id. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est."
-    author: David White
-    position: Designer at Huglab
-    avatar: images/@stock/author-avatar-1.png
-  - text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing."
-    author: David White
-    position: Designer at Huglab
-    avatar: images/@stock/author-avatar-2.png
-  - text: "Reprehenderit eos et non et ut eum reprehenderit quis sequi quia vel repellendus id. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est."
-    author: David White
-    position: Designer at Huglab
-    avatar: images/@stock/author-avatar-3.png
-
-members:
-  - name: Corey Wolloff
-    position: Parish Pastor
-    desc:
-      consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit.
-    avatar: images/@stock/member-1.jpg
-    socials:
-      - icon_class: fa fa-twitter
-        url: http://twitter.com
-      - icon_class: fa fa-facebook
-        url: http://facebook.com
-  - name: Sarah Nichols
-    position: Kids Church Director
-    desc:
-      consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit.
-    avatar: images/@stock/member-2.jpg
-    socials:
-      - icon_class: fa fa-twitter
-        url: http://twitter.com
-      - icon_class: fa fa-facebook
-        url: http://facebook.com
-      - icon_class: fa fa-dribbble
-        url: http://dribbble.com
-  - name: Shaun Metzger
-    position: Worship Team Lead
-    desc:
-      consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit.
-    avatar: images/@stock/member-3.jpg
-    socials:
-      - icon_class: fa fa-twitter
-        url: http://twitter.com
-      - icon_class: fa fa-facebook
-        url: http://facebook.com
-      - icon_class: fa fa-tumblr
-        url: http://tumblr.com
-  - name: John Nichols
-    position: Associate Worship Leader
-    desc:
-      consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit.
-    avatar: images/@stock/member-4.jpg
-    socials:
-      - icon_class: fa fa-twitter
-        url: http://twitter.com
-      - icon_class: fa fa-facebook
-        url: http://facebook.com
 ---
 
 
-<div class='full'>
+<div id="story" class='full'>
   <div class='row'>
     <div class='large-12 columns'>
-      <h4 style='color: #999'>Get to Know Journey</h4>
-      <h2>Who We Are</h2>
+      <div class="mod modSectionHeader ">
+        <div class="special-title centered-text">
+          <h2 style="color: ;">Our Story</h2>
+        </div>
+
+      </div>
       <div class='spacing'></div>
-      <p>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing.</p>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing.</p>
+      <p>In the spring of 2012 the vision for a new congregation in Downtown Tampa was shared with the JCT Riverview Parish.
+        After much prayer and many powerful moments of God’s favor toward this endeavor, Journey Church Tampa Downtown was planted in the spring of 2013 by a team of eleven people.</p>
+
+        <p>Members of this plant team continued to meet in the evenings, faithfully serving the city blocks around them where there were little signs of life in the wake of the recession that had swept through Tampa.
+        </p>
+
+        <p>We as a church went through a transition in the early spring of 2015 bringing Pastor Corey Wolloff to the team as Parish Pastor and shifting our services to Sunday mornings.
+          As the city has gained momentum and undergone incredible changes we have been right here in the middle of it all. We could not be happier with all that God is doing in Tampa.
+
+        </p>
+    <p>
+          In the Winter of 2018 we underwent a full and complete renovation of our meeting space in downtown creating a beautiful building in which to meet together and serve the city well.
+          Our Kids Church has expanded rapidly, God has been faithful to our church and we are absolutely convinced that the best is yet to come.
+    </p>
+      <p>
+          The future is indeed bright. We welcome you to join in on the incredible story that God continues to write with our church in this city that we love.
+      </p>
     </div>
   </div>
   <div class='three spacing'></div>
 </div>
-<div class='full' style='background: #f5f5f5'>
-  <div class='row'>
-    <div class='medium-6 columns'>
-      <h3>Our skills</h3>
-      <div class='spacing'></div>
-      <div class='mod modBarGraph'>
-        <ul class='bars'>
-          {% for skill in page.skills %}
-            <li>
-              <h4 style=''>
-                {{skill.title}}
-                <strong>{{skill.percent}}%</strong>
-              </h4>
-              <p class='highlighted' data-percent='{{skill.percent}}'></p>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-    <div class='medium-6 columns'>
-      <h3>The testimonials</h3>
-      <div class='mod modTestimonials simple'>
-        <div class='row'>
-          <div class='small-12 columns'>
-            <div class='items'>
-              {% for t in page.testimonials %}
-                <div class='item'>
-                  <p class='quote'>{{t.text}}</p>
-                  <div class='author'>
-                    <p class='author-avatar'>
-                      <img alt="" src="{{t.avatar}}" />
-                    </p>
-                    <p class='author-name'>
-                      -
-                      <strong>
-                        {{t.author}}
-                      </strong>
-                      , {{t.position}}
-                    </p>
-                  </div>
-                </div>
-              {% endfor %}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class='two spacing'></div>
-</div>
-<div id="staff" class='full'>
+
+
+<div id="belief" class='full'>
   <div class='row'>
     <div class='large-12 columns'>
-      <h3>Our team</h3>
-      <div class='spacing'></div>
+      <div class="mod modSectionHeader ">
+        <div class="special-title centered-text">
+          <h2 style="color: ;">What We Believe</h2>
+        </div>
+
+      </div>
+      <div class=" four spacing"></div>
+      <div class="row align-center">
+        <div class="small-12 medium-3 columns ">
+          <div class="timeline-item">
+            <img class="timeline" src="https://via.placeholder.com/150.png">
+            <h4>Creation</h4>
+            <p>God and Humanity</p>
+          </div>
+        </div>
+        <div class="small-12 medium-3 columns">
+          <div class="timeline-item">
+          <img class="timeline" src="https://via.placeholder.com/150.png">
+          <h4>Fall</h4>
+            <p>Sin and our Alienation</p>
+          </div>
+        </div>
+        <div class="small-12 medium-3 columns">
+          <div class="timeline-item">
+          <img class="timeline" src="https://via.placeholder.com/150.png">
+          <h4>Redemption</h4>
+            <p>Christ and our Atonement</p>
+          </div>
+        </div>
+        <div class="small-12 medium-3 columns">
+          <div class="timeline-item">
+          <img class="timeline" src="https://via.placeholder.com/150.png">
+          <h4>Restoration</h4>
+            <p>Faith and the Kingdom</p>
+          </div>
+        </div>
+      </div>
+      <div class=" four spacing"></div>
+      <h3>The Gospel</h3>
+      <p>By believing the Gospel, you are brought into a new community (1 Corinthians 12:13). In the church, gospel-changed Christians now slowly become freed from the inner slavery and the social exclusion that marked their lives before. The church is where Christians with transformed identities begin to live out (partially, but significantly) the changed economic, social, racial, and family relationships that will mark the future kingdom of God, when Christ comes to completely heal all the alienation in the world and renew the whole earth. The church becomes the 'sign of the kingdom' for a broken world.
+      </p>
+      <div class=" two spacing"></div>
+      <hr>
+      <h3>The Apostles’ Creed</h3>
+      <p>I believe in God, the Father Almighty, the Creator of heaven and earth, and in Jesus Christ, His only Son, our Lord: Who was conceived of the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died, and was buried.  The third day He arose again from the dead. He ascended into heaven and sits at the right hand of God the Father Almighty, whence He shall come to judge the living and the dead. I believe in the Holy Spirit, the holy (universal) church, the communion of saints, the forgiveness of sins, the resurrection of the body, and life everlasting.
+      </p>
+      <div class=" two spacing"></div>
+      <hr>
+      <h3>The Nicene Creed</h3>
+      <p>I believe in one God, the Father Almighty, Maker of heaven and earth, and of all things visible and invisible. And in one Lord Jesus Christ, the only-begotten Son of God, begotten of the Father before all worlds; God of God, Light of Light, very God of very God; begotten, not made, being of one substance with the Father, by whom all things were made. Who, for us men and for our salvation, came down from heaven, and was incarnate by the Holy Spirit of the virgin Mary, and was made man; and was crucified also for us under Pontius Pilate; He suffered and was buried; and the third day He rose again, according to the Scriptures; and ascended into heaven, and sits on the right hand of the Father; and He shall come again, with glory, to judge the quick and the dead; whose kingdom shall have no end. And I believe in the Holy Ghost, the Lord and Giver of Life; who proceeds from the Father and the Son; who with the Father and the Son together is worshipped and glorified; who spoke by the prophets. And I believe one holy (universal) and apostolic Church. I acknowledge one baptism for the remission of sins; and I look for the resurrection of the dead, and the life of the world to come. Amen.</p>
     </div>
   </div>
-  <div class='row'>
-    {% for member in page.members %}
-      <div class='small-6 medium-3 large-3 columns'>
-        <div class='mod modTeamMember style-2'>
-          <div class='member'>
-            <img class="avatar" alt="" src="{{site.url}}/{{member.avatar}}" />
-            <!--<div class='overlay'>-->
-              <!--<ul class='socials'>-->
-                <!--{% for social in member.socials %}-->
-                  <!--<li>-->
-                    <!--<a href='{{social.url}}'>-->
-                      <!--<i class='{{social.icon_class}}'></i>-->
-                    <!--</a>-->
-                  <!--</li>-->
-                <!--{% endfor %}-->
-              <!--</ul>-->
-            <!--</div>-->
-          </div>
-          <h3>{{member.name}}</h3>
-          <p class='position'>{{member.position}}</p>
-          <p>{{member.desc}}</p>
-          <div class='two spacing'></div>
+  <div class='three spacing'></div>
+</div>
+
+<div id="culture" class="full">
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="mod modSectionHeader ">
+        <div class="special-title centered-text">
+          <h2 style="color: ;">Cultural Distinctives</h2>
         </div>
+
+      </div>
+      <div class="spacing"></div>
+      <p>
+        Every organization has a culture/ethos. It’s a way of doing things. At JCT, we want to make sure that the culture of our church is very clear. In order to keep our culture from becoming watered down, we have clear cultural distinctive that we want to keep at the center of everything we do. You will see these working no matter the parish you attend. Our heart is to live out (become practitioners of) each of these.
+      </p>
+      <div class="three spacing"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="medium-6 columns">
+      <div class="fadein mod modIconText appear distinctive" data-delay="0">
+        <div class="icon-text-simple">
+          <i class="fa fa-trophy"></i>
+          <h3>Culture of Pursuit</h3>
+          <p>We Long To Be A Community Of People That Daily Pursue An Intimate Relationship With Our Heavenly Father.</p>
+        </div>
+        <div class="two spacing"></div>
+      </div>
+
+      <div class="fadein mod modIconText appear distinctive" data-delay="300">
+        <div class="icon-text-simple">
+          <i class="fa fa-heart"></i>
+          <h3>Culture Of Grace</h3>
+          <p>We Desire To Be A Community Of People That Live By The Grace Of Jesus Christ, To Show Others The Same Grace That Jesus Has Shown Us, And To Teach Grace As The Only Way We Can Really Change.
+          </p>
+        </div>
+        <div class="two spacing"></div>
+      </div>
+
+      <div class="fadein mod modIconText appear distinctive" data-delay="600">
+        <div class="icon-text-simple">
+          <i class="fa fa-heart"></i>
+          <h3>Culture Of Renewal</h3>
+          <p>We Long To Seek The Renewal Of Our Neighborhoods As We See God’s Kingdom Come In Tampa As It Is In Heaven.
+          </p>
+        </div>
+        <div class="two spacing"></div>
+      </div>
+    </div>
+    <div class="medium-6 columns">
+      <div class="fadein mod modIconText appear distinctive" data-delay="900">
+        <div class="icon-text-simple">
+          <i class="fa fa-users"></i>
+          <h3>Culture Of Family</h3>
+          <p>We Aim To Be A Community Of People That Stand Beside One Another Through The Joys And Complexities That Make Up Our Daily Lives, Resolving Conflict, And Joining In Celebration With One Another As True Brothers And Sisters In Our Heavenly Father.
+          </p>
+        </div>
+        <div class="two spacing"></div>
+      </div>
+
+      <div class="fadein mod modIconText appear distinctive" data-delay="0">
+        <div class="icon-text-simple">
+          <i class="fa fa-compass"></i>
+          <h3>Culture Of Presence</h3>
+          <p>We Desire To Be A Community Of People Marked By The Presence Of The Holy Spirit, Both In Our Daily Lives, And Our Corporate Gatherings.
+          </p>
+        </div>
+        <div class="two spacing"></div>
+      </div>
+
+      <div class="fadein mod modIconText appear distinctive" data-delay="300">
+        <div class="icon-text-simple">
+          <i class="fa fa-tree"></i>
+          <h3>Culture Of Generosity</h3>
+          <p>We Long To Be A Community Of People Living Lives Of Holistic Generosity In Our Time, Talents And Treasure, Following The Example Set Forth By Jesus Who Gave Himself Completely On Our Behalf.
+          </p>
+        </div>
+        <div class="two spacing"></div>
+      </div>
+    </div>
+  </div>
+  <div class="spacing"></div>
+</div>
+
+<div id="belief" class='full'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <div class="mod modSectionHeader ">
+        <div class="special-title centered-text">
+          <h2 style="color: ;">Covenant Membership</h2>
+        </div>
+      </div>
+      <div class='spacing'></div>
+      <h3></h3>
+      <p>A Covenant is a promise, a deep commitment of joining in with something that is greater or more vast than any individual. By being in Covenant community with each other we push against the grain of cultural church consumerism and agree that we not only want to faithfully follow Jesus but that we want to faithfully follow HIm together. One for another, all committed to Jesus.
+      </p>
+    </div>
+  </div>
+</div>
+<div class='four spacing'></div>
+<div class='full no-padding' style='background: #444; color: #fff'>
+<div class='two spacing'></div>
+<div class='mod modCallToAction'>
+<div class='row'>
+<div class='medium-9 large-9 columns'>
+<p>Want to learn more about membership? Download the JCT membership guide.</p>
+</div>
+<div class='medium-3 large-3 columns'>
+<a class='boxed button' href='http://themeforest.net/user/honryou/portfolio?ref=honryou'>Download</a>
+</div>
+</div>
+</div>
+<div class='spacing'></div>
+</div>
+
+<div class='four spacing'></div>
+<div class='four spacing'></div>
+<div id="staff" class="full dark-grey no-padding">
+  <div class="row" style="background: #f5f5f5">
+    <div class='four spacing'></div>
+    <h2 class="centered-text ">Meet Our Team!</h2>
+    <div class='two spacing'></div>
+  <div class="members show-for-medium-up">
+    {% for member in site.data.staff %}
+    <div class="small-3 columns">
+      <div class="member-avatar">
+        <img class="avatar" alt="" src="{{site.url}}/{{member.avatar}}">
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  </div>
+</div>
+<div  >
+  <!--<div class='row'>-->
+    <!--<div class='large-12 columns'>-->
+      <!--&lt;!&ndash;<h3>Our team</h3>&ndash;&gt;-->
+      <!--&lt;!&ndash;<div class='spacing'></div>&ndash;&gt;-->
+    <!--</div>-->
+  <!--</div>-->
+  <div class='row collapse'>
+    {% for member in site.data.staff %}
+      <div class='small-12 medium-3 large-3 columns'>
+        <div class='mod modTeamMember style-2'>
+          <div style="width: 100%;" class='member dark-grey show-for-small-only'>
+            <div class='spacing'></div>
+            <h2 class="centered-text " >{{member.name}}</h2>
+            <h3 class='position centered-text'>{{member.position}}</h3>
+            <p style="margin: 0 1rem;" class="centered-text">{{member.desc}}</p>
+            <div class='two spacing'></div>
+            <img class="avatar" alt="" src="{{site.url}}/{{member.avatar}}" />
+
+          </div>
+          <div class="spacing"></div>
+          <div class="modTeamMemberInfo show-for-medium-up">
+          <h3 class="centered-text " >{{member.name}}</h3>
+          <p class='position centered-text'>{{member.position}}</p>
+          <p class="centered-text">{{member.desc}}</p>
+          <div class='two spacing'></div>
+          </div>
+        </div>
+        <div class='four spacing'></div>
       </div>
     {% endfor %}
   </div>
